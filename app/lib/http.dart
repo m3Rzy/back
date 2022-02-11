@@ -9,7 +9,7 @@ class RequestResult
 }
 
 const protocol = "http";
-const host = "10.0.2.2:3000";
+const host = "5.180.136.193:3000";
 
 Future<RequestResult> http_post(String route, [dynamic data]) async
 {
