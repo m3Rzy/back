@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:app/http.dart';
 import 'package:flutter/material.dart';
 
-
 class AddNews extends StatefulWidget {
   const AddNews({Key? key}) : super(key: key);
 
@@ -20,13 +19,11 @@ class _AddNewsState extends State<AddNews> {
       "number": numberController.text,
       "name": nameConroller.text,
     });
-    if (result.ok)
-    {
+    if (result.ok) {
       setState(() {
         //response = result.data??['status'];
         print(result.data);
       });
-      
     }
   }
 
@@ -45,7 +42,6 @@ class _AddNewsState extends State<AddNews> {
                 opacity: 0.7,
                 child: TextField(
                   controller: numberController,
-                  
                   style: const TextStyle(
                       color: Color(0xff134373), fontSize: 16, height: 1.1),
                   decoration: InputDecoration(
@@ -118,5 +114,3 @@ class _AddNewsState extends State<AddNews> {
     ));
   }
 }
-
-
